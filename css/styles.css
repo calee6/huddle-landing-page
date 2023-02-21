@@ -1,0 +1,220 @@
+/*****************************************************COLORS*****************************************************/
+:root {
+    --violet: #6648B1;
+    --soft-magenta: #E882E8;
+}
+
+/*****************************************************SELECTORS*****************************************************/
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/*************************************************CLASS SELECTORS**************************************************/
+.button {
+    background-color: white;
+    border-radius: 50px;
+    color: var(--violet);
+    display: inline-block;
+    filter: drop-shadow(2px 3px 4px rgb(47, 47, 47));
+    padding: 15px 60px;
+    text-decoration: none;
+}
+
+.button:hover, button:active {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+.flex {
+    display: flex;
+    margin: 10px 70px;
+}
+
+.logo {
+    height: auto;
+    margin: 30px 70px;
+    width: 15%;
+}
+
+.mockups {
+    width: 650px;
+    height: auto;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+}
+
+.socialmedia img {
+    height: auto;
+    width: 45px;
+    margin-left: 20px;
+}
+
+.socialmedia img:hover, .socialmedia img:active {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.textbox {
+    margin-left: 40px;
+}
+
+
+
+
+
+@media (min-width: 971px) and (max-width: 1170px) {
+    h1 {
+        font-size: 30px;
+    }
+    .button{
+        margin: 20px;
+    }
+    .flex {
+        margin: 10px 50px;
+    }
+    .logo {
+        margin: 40px 50px;
+        width: 20%;
+    }
+    .mockups {
+        width: 550px;
+    }
+    .socialmedia {
+        margin: 40px 50px;
+    }
+    .socialmedia img {
+        height: auto;
+        width: 35px;
+        margin: 10px 10px;
+    }
+    .textbox {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 970px) {
+    h1 {
+        font-size: 30px;
+    }
+    .button{
+        margin: 20px;
+    }
+    .flex {
+        margin: 10px 60px;
+    }
+    .logo {
+        margin: 40px 70px;
+        width: 20%;
+    }
+    .mockups {
+        width: 450px;
+    }
+    .socialmedia {
+        margin: 40px 60px;
+    }
+    .socialmedia img {
+        height: auto;
+        width: 35px;
+        margin: 10px 10px;
+    }
+    .textbox {
+        margin-left: 20px;
+    }
+}
+
+
+@media (min-width: 651px) and (max-width: 800px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+        height: 1100px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .button{
+        margin: 20px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 60px;
+    }
+    .logo {
+        margin: 30px 70px;
+        width: 30%;
+    }
+    .mockups {
+        width: 100%;
+    }
+    .socialmedia {
+        margin: 40px 0px;
+        justify-content: center;
+    }
+    .socialmedia img {
+        height: auto;
+        width: 35px;
+        margin: 0px 10px;
+    }
+    .textbox {
+        margin: 50px 0px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+        height: 1000px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .button{
+        margin: 20px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 60px;
+    }
+    .logo {
+        margin: 30px 70px;
+        width: 30%;
+    }
+    .mockups {
+        width: 100%;
+    }
+    .socialmedia {
+        margin: 40px 0px;
+        justify-content: center;
+    }
+    .socialmedia img {
+        height: auto;
+        width: 35px;
+        margin: 0px 10px;
+    }
+    .textbox {
+        margin: 50px 0px;
+        text-align: center;
+    }
+}
