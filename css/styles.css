@@ -43,7 +43,7 @@ h1 {
 
 .flex {
     display: flex;
-    margin: 10px 70px;
+    margin: 35px 70px 35px 70px;
 }
 
 .logo {
@@ -66,7 +66,7 @@ h1 {
 .socialmedia img {
     height: auto;
     width: 45px;
-    margin-left: 20px;
+    margin: 10px;
 }
 
 .socialmedia img:hover, .socialmedia img:active {
@@ -79,9 +79,7 @@ h1 {
 }
 
 
-
-
-
+/*************************************************MEDIA QUERIES**************************************************/
 @media (min-width: 971px) and (max-width: 1170px) {
     h1 {
         font-size: 30px;
@@ -90,7 +88,7 @@ h1 {
         margin: 20px;
     }
     .flex {
-        margin: 10px 50px;
+        margin: 40px 50px;
     }
     .logo {
         margin: 40px 50px;
@@ -120,7 +118,7 @@ h1 {
         margin: 20px;
     }
     .flex {
-        margin: 10px 60px;
+        margin: 40px 90px;
     }
     .logo {
         margin: 40px 70px;
@@ -142,7 +140,7 @@ h1 {
     }
 }
 
-
+/*FLEX DIRECTION: COLUMN*/
 @media (min-width: 651px) and (max-width: 800px) {
     body {
         background-image: url(../images/bg-mobile.svg);
@@ -155,7 +153,6 @@ h1 {
         margin: 20px;
     }
     .flex {
-        display: flex;
         flex-direction: column;
         margin: 10px 60px;
     }
